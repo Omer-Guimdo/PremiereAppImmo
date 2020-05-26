@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="footer">
             <ul>
                 <p>contactez nous</p>
-                <p>Telephone: </p>
+                <p>Téléphone: </p>
                 <p>E-Mail:</p>
             </ul>
             <ul>
