@@ -1,0 +1,582 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.Logo{
+  display: flex;
+  background-color: #f5f5f0;
+}
+
+
+
+.lesLogos{
+	flex: 3;
+}
+.connecter{
+  text-align: right;
+  padding-top: 10px;
+	flex: 1;
+}
+.inscrire{
+  text-align: center;
+  padding-top: 10px;
+	flex: 1;
+}
+.recherche{
+  text-align: center;
+	flex: 2;
+}
+.btn-outline-dark{
+  width: 200px;
+}
+.btn-dark{
+  width: 200px;
+}
+
+
+.Logo a:hover{
+  text-decoration: none;
+}
+.logo1 {
+  color: blue;
+  font-size: 25px;
+  margin-left: 100px;
+}
+.logo2 {
+  color: #ff6600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+}
+
+.menuDeroulant{
+	margin: 10px;
+  padding: 10px;
+  /*width: 200px;*/
+}
+.menuDeroulant ul{
+  list-style-type: none;
+  margin: 2px;
+  padding: 0;
+  width: 200px;
+}
+.menuDeroulant ul li a{
+	list-style-type: none;
+	display: block;
+  padding: 10px;
+  color: black;
+	text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: #ff6600;
+  margin: 2px;
+}
+.menuDeroulant ul li a:hover{
+background-color: white;
+color:#ff6600;
+}
+/*.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+}*/
+
+.menu{
+  background-color: #ff6600;
+ /* padding-bottom: 40px;*/
+}
+.menu ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  display: flex;
+  margin-left: 200px;
+}
+.menu ul li a{
+background-color: #ff6600;
+color: white;
+border-top: 2px solid #ff6600;
+display: block;
+padding: 10px;
+text-decoration: none;
+text-align: center;
+}
+.menu ul li a:hover{
+background-color: blue;
+color: white;
+}
+
+.menuDeroulant{
+  display: flex;
+  background-color: blue;
+}
+.nav{
+  background-color: #cc5200;
+}
+.nav > ul{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  margin-left: 150px;
+}
+.nav > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.nav > ul > li{
+  float: left;
+  position: relative;
+}
+.nav > ul > li > a{
+  padding:  10px 15px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+.nav > ul > li > a:hover{
+  /*padding: 15px 30px 20px 30px;*/
+  color: #cc5200;
+  font-weight: bold;
+}
+.submenu{
+  display: none;
+}
+.nav a{
+  /*display: inline-block;*/
+  text-decoration: none;
+}
+.nav li:hover .submenu{
+  /*display: inline-block;*/
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 1000;
+}
+.submenu li{
+  border-bottom: 1px solid #ccc;
+  list-style-type: none;
+}
+.submenu li a{
+  padding: 10px 15px;
+  font-size: 13px;
+  color:black;
+  width: 270px;
+  text-decoration: none;
+}
+
+.menu-Location:hover{
+  border-top: 2px solid #ff6600;
+  background-color:#f2f2f2;
+
+} 
+.menu-Vente:hover, .menu-tourisme:hover, .menu-Renovation:hover, .menu-Demenagement:hover, .menu-Menage:hover, .menu-Forum:hover{
+  border-top: 2px solid #ff6600;
+  background-color:#f2f2f2;
+} 
+.menu-Location .submenu{
+  background-color:#f2f2f2;
+}
+.menu-Vente .submenu{
+  background-color: #f2f2f2;
+}
+.menu-tourisme .submenu, .menu-Renovation .submenu, .menu-Demenagement .submenu, .menu-Menage .submenu, .menu-Forum .submenu{
+  background-color: #f2f2f2;
+}
+.menu-Location .submenu li:hover, .menu-Vente .submenu li:hover, .menu-tourisme .submenu li:hover, .menu-Renovation .submenu li:hover, .menu-Demenagement .submenu li:hover, .menu-Menage .submenu li:hover, .menu-Forum .submenu li:hover{
+  background-color: #cc5200;
+}
+.menu-Location .submenu li:hover a, .menu-Vente .submenu li:hover a, .menu-tourisme .submenu li:hover a, .menu-Renovation .submenu li:hover a, .menu-Demenagement .submenu li:hover a, .menu-Menage .submenu li:hover a, .menu-Forum .submenu li:hover a{
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+}
+.article{
+  background-image: url("./components/acueil1.jpeg");
+  height: 475px;
+ /* padding-top: 30px;*/
+}
+  .forms{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    text-align: center;
+    margin-top: 40px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+    color: white;
+  }
+  .forms h2{
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+
+  }
+  .pub{
+    text-align: center;
+    color:hsl(201, 82%, 35%);
+    padding-top: 10px;
+    font-weight: bold;
+  }
+  form label{
+    font-size: 16px;
+    clear: left;
+  }
+  .form{
+    display: flex;
+    margin-left: 110px;
+  }
+  .prixMax, .prixMin, .naturImmo, .lieuImmo{
+    margin: 5px;
+  }
+  .btn-primary{
+    margin-top: 10px;
+  }
+  .poster{
+    display: flex;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    background-color: #ff6600;
+    color: white;
+  }
+  .poster a{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .poster a:hover{
+    text-decoration: none;
+    color: white;
+  }
+  .lienPost{
+    flex: 1;
+    border: 1px solid white;
+    padding: 10px;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-align: center;
+  }
+  .textPost{
+    font-size: 25px;
+    flex: 1;
+    padding-left: 300px;
+  }
+  .lienPost:hover{
+    background-color: #cc5200;
+  }
+  .espace_touristique_titre{
+    text-align: center;
+    padding-top: 45px;
+    color: white;
+    font-weight: bold;
+  }
+  .Espace_touriste{
+    padding-top: 60px;
+    padding-bottom: 100px;
+    text-align: center;
+    display: flex;
+    color: black;
+  }
+  .Espace_touriste_g{
+    background-color: cadetblue;
+  }
+  .Espace_touriste img{
+    width: 64px;
+  }
+  .Espace_touriste div{
+      flex: 1;
+  }
+  .Espace_touriste div a:hover{
+    color: #cc5200;
+    text-decoration: none;
+}
+.Espace_touriste div a{
+  color:black;
+}
+.Espace_immobilier_g{
+  text-align: center;
+  background-color: #00111a;
+  color: white;
+  padding: 50px;
+}
+.espace_immobilier_titre{
+  text-align: center;
+  padding-top: 20px;
+  color: #cc5200;
+  font-weight: bold;
+}
+.Espace_immobilier1{
+  padding-top: 50px;
+  display: flex;
+}
+.Espace_immobilier2{
+  padding-top: 75px;
+  padding-bottom: 50px;
+  display: flex;
+}
+.Espace_immobilier1, .Espace_immobilier2{
+  display: flex;
+}
+.Espace_immobilier1 div, .Espace_immobilier2 div{
+  flex: 1;
+}
+.Espace_immobilier_g img{
+  width: 64px;
+}
+.Espace_immobilier_g div a:hover{
+  color: #cc5200;
+  text-decoration: none;
+}
+.Espace_immobilier_g div a{
+color:white;
+}
+.Espace_touriste div{
+  flex: 1;
+}
+
+.mobile_app_g{
+  height: 500px;
+  background-color: #ff6600;
+  text-align: center;
+  color: white;
+}
+.mobile_app_g h1{
+  padding-top: 25px;
+}
+.apple img{
+  width: 168px;
+  height: 60px;
+  margin-left: 15px;
+}
+.mobile_app_g a{
+  color: #00111a;
+}
+.mobile_app_g a:hover{
+  text-decoration: none;
+  color: cadetblue;
+}
+.signUpLoginBox{
+  padding-top: 45px;
+}
+.signUpLoginBox{
+  text-align: center;
+}
+form input{
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  border: 1px solid #cc5200;
+  color: #cc5200;
+}
+#checkbox4{
+  margin-top: 30px;
+  height: 30px;
+}
+.formBoxLeft{
+  display: flex;
+  background-color: #f5f5f0;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.signUpLoginBox h1{
+  color: #cc5200;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.signUpLoginBox h2{
+  color: #cc5200;
+  margin-bottom: 30px;
+}
+.formContent{
+  background-color: white;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.formContent .simpleLink{
+  display: block;
+  width: 25%;
+  margin-right: 0;
+  margin-left: auto;
+  color:cadetblue;
+  padding-top: 20px;
+}
+.formContent .simpleLink:hover{
+  text-decoration: none;
+  color: blueviolet;
+}
+.formBoxRight{
+  background-color: white;
+  padding: 25px;
+  margin-left: 35px;
+}
+
+.errorPageTextAndButton{
+  width: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+.target{
+  display: flex;
+}
+.target img{
+  margin-right: 15px;
+}
+
+.loginlinkContainer a{
+  
+  border: 2px solid #f5f5f0;
+  padding: 10px;
+  font-size: 16px;
+  display: block;
+  margin-top: 25px;
+  color: black;
+}
+.loginlinkContainer a:hover{
+  
+  background-color: #f5f5f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contenantTitre h1{
+  padding-top: 70px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: #cc5200;
+}
+.contenantDesBox{
+  display: flex;
+  background-color: #f5f5f0;
+  padding: 50px;
+  text-align: center;
+}
+.contenantDesBox h2{
+  color: #cc5200;
+  margin-bottom: 15px;
+}
+.contenantFlexBox{
+  background-color: #f5f5f0;
+  padding-bottom: 50px;
+}
+.boxleft{
+  background-color: white;
+  flex: 1;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 25px;
+}
+.boxright{
+  background-color: white;
+  flex: 1;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 25px;
+}
+.boxright a{
+color: #cc5200;
+font-weight: bold;
+}
+.boxleft input, .boxright input{
+  width: 100%;
+  border: 1px solid #cc5200;
+  height: 40px;
+  font-size: 20px;
+}
+.boxbottom{
+  background-color: white;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+/* button de connexion*/
+
+form .btn-secondary, form .btn-primary{
+  margin-top: 25px;
+}
+.btn-group-toggle{
+  width: 200px;
+  text-align: right;
+  padding-top: 10px;
+}
+  /*la parge d'attente de chargement*/
+
+  .loader{
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .forgetPass{
+    display: block;
+    width: 25%;
+    margin-right: 0;
+    margin-left: auto;
+    color:red;
+    padding-top: 20px;
+  }
+  .forgetPass:hover{
+    text-decoration: none;
+    color: blueviolet;
+  }
+  .utilisateurConnecter{
+    margin-top: 15px;
+  }
+  .utilisateurConnecterps{
+    color: green;
+  }
+
+
+
+
+
+.footer{
+  padding: 50px;
+  margin: 0px;
+  background-color:#00111a;
+  color: white;
+  display: flex;
+}
+.footer ul{
+	list-style-type: none;
+  margin-right: 10px;
+  flex: 1;
+}
+.footer ul li a{
+  color: white;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 12px;
+  border-bottom: 1px solid white;
+  }
+  .footer ul li a:hover{
+  color: blueviolet;
+  border-bottom: 1px solid blueviolet;
+  }
+
+
+
+
